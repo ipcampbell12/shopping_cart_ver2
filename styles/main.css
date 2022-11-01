@@ -1,0 +1,161 @@
+:root {
+  --border-setting: 1em;
+  --shadow-setting: 0px 5px 15px rgba(0, 0, 0, .35);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  height: 100vh;
+}
+
+.container {
+  background: lightblue;
+  border: solid 1px black;
+  box-shadow: var(--shadow-setting);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3%;
+  width: 90%;
+  height: 90%;
+  border-radius: var(--border-setting);
+}
+.container .title {
+  justify-self: center;
+  width: 45%;
+  height: 9%;
+  background: white;
+  border: solid 1px black;
+  margin: 0.5em;
+  padding-bottom: 0.5em;
+  border-radius: var(--border-setting);
+  box-shadow: var(--shadow-setting);
+}
+.container .title h1 {
+  text-align: center;
+}
+.container .items-container {
+  background: lightcoral;
+  border: solid 1px black;
+  border-radius: var(--border-setting);
+  box-shadow: var(--shadow-setting);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 93%;
+  height: 45%;
+  margin: 1%;
+}
+.container .items-container table td img {
+  width: 5%;
+  height: 5%;
+  padding: 0;
+  margin: 0;
+}
+.container .items-container table .items {
+  align-self: center;
+  background: lightgreen;
+  border: solid 1px black;
+  border-radius: var(--border-setting);
+  box-shadow: var(--shadow-setting);
+  width: 22%;
+  height: 85%;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .items-container table .items h4 {
+  margin: 0.25em;
+}
+.container .items-container table .lower {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container .items-container table .lower .add {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  background: green;
+  width: 25%;
+  border: solid 1px black;
+  border-radius: var(--border-setting);
+  box-shadow: var(--shadow-setting);
+}
+.container .cart {
+  align-self: center;
+  background: lightgray;
+  border-radius: var(--border-setting);
+  box-shadow: var(--shadow-setting);
+  border: solid 1px black;
+  width: 93%;
+  height: 50%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.container .cart h3 {
+  text-align: center;
+}
+.container .cart .cart-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container .cart .cart-items .ships-table {
+  border: solid 0.5px black;
+}
+.container .cart .cart-items .ships-table tr {
+  border: solid 0.5px black;
+  line-height: 1.25em;
+}
+.container .cart .cart-items .ships-table tr td {
+  padding: 0.25em 2em 0.25em 2em;
+  border: solid 0.5px black;
+}
+.container .cart .cart-items .ships-table tr td .increase {
+  width: 125%;
+  background: green;
+  border-radius: 7em;
+  font-weight: bold;
+}
+.container .cart .cart-items .ships-table tr td .decrease {
+  width: 125%;
+  background: red;
+  border-radius: 7em;
+  font-weight: bold;
+}
+.container .cart .lower-cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
+.container .cart .lower-cart p {
+  padding: 1em;
+  margin: 1em;
+  width: 15%;
+  height: 10%;
+  border: solid 1px black;
+}
+.container .cart .lower-cart button {
+  background: blue;
+  border-radius: var(--border-setting);
+  box-shadow: var(--shadow-setting);
+  border: solid 1px black;
+  width: 9%;
+  height: 3%;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  margin: 2%;
+  color: white;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
