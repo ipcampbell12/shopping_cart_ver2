@@ -50,27 +50,29 @@ body {
   height: 45%;
   margin: 1%;
 }
-.container .items-container table td img {
-  width: 5%;
+.container .items-container table {
+  margin: 2%;
+}
+.container .items-container table tr {
+  width: 90%;
+  height: auto;
+  background: lightblue;
+}
+.container .items-container table tr td {
+  width: 25%;
+  height: auto;
+  text-align: center;
+}
+.container .items-container table tr .images {
+  width: 10%;
+  height: auto;
+}
+.container .items-container table tr .images img {
+  width: 75%;
   height: 5%;
   padding: 0;
   margin: 0;
-}
-.container .items-container table .items {
-  align-self: center;
-  background: lightgreen;
-  border: solid 1px black;
-  border-radius: var(--border-setting);
-  box-shadow: var(--shadow-setting);
-  width: 22%;
-  height: 85%;
-  margin: 2%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.container .items-container table .items h4 {
-  margin: 0.25em;
+  text-align: center;
 }
 .container .items-container table .lower {
   width: 100%;

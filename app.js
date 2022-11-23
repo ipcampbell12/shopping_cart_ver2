@@ -9,13 +9,20 @@ const items = [
 
 ]
 
+//turns number in string 
+//only use for displaying number, not for doing math
+const numberFormatter =
+    new Intl.NumberFormat('en-US', {
+        style: 'currency',
+        currency: 'USD'
+    });
 const itemsContainer = document.querySelector('#items-table');
 const cartContainer = document.querySelector('#ships-table')
 
 const itemsHTML = (item) => `
    <tr>
         <td>${item.product_name}</td>
-        <td>${item.price}</td>
+        <td>${numberFormatter.format(item.price)}</td>
         <td class="images"><img src="${item.image}"></td>
         <td><button id="item-${item.id}">Add</button></td>
    </tr>
@@ -35,6 +42,10 @@ const cartHtML = (item) => `
 items.forEach(item => {
     itemsContainer.insertAdjacentHTML('beforeend', itemsHTML(item))
 });
+
+
+//every time you add an item, whether from add button, always check the quantity
+//one line if statement if encapsulates add item logic into a callable function
 
 
 itemsContainer.addEventListener('click', (evt) => {
@@ -61,12 +72,6 @@ itemsContainer.addEventListener('click', (evt) => {
         }
 
     }
-
-
-    // let tableRows = evt.target.parentElement.parentElement.parentElement.parentElement.parentElement.nextElementSibling.children[1].children[0].rows
-    // console.log(tableRows[itemId].cells[4].firstChild.id)
-
-
 
     getTotal()
 });
@@ -117,7 +122,7 @@ function getTotal() {
         //console.log(total)
     }
 
-    let grandTotal = document.getElementById('grand-total').innerText = total
+    let grandTotal = document.getElementById('grand-total').innerText = numberFormatter.format(total)
     // console.log(grandTotal)
 }
 

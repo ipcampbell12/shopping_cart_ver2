@@ -59,38 +59,44 @@ body {
         margin: 1%;
 
         table {
-            .images {
-                width: 5%;
 
-                img {
+
+            margin: 2%;
+
+
+            tr {
+
+                width: 90%;
+                height: auto;
+                background: lightblue;
+
+                td {
                     width: 25%;
-                    height: 5%;
-                    padding: 0;
-                    margin: 0;
-
-                }
-            }
-
-            .items {
-                align-self: center;
-                background: lightgreen;
-                border: solid 1px black;
-                border-radius: var(--border-setting);
-                box-shadow: var(--shadow-setting);
-                width: 22%;
-                height: 85%;
-                margin: 2%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-                h4 {
-                    margin: .25em;
+                    height: auto;
+                    text-align: center;
                 }
 
+                .images {
+                    width: 10%;
+                    height: auto;
 
+                    img {
+                        width: 75%;
+                        height: 5%;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+
+                    }
+                }
 
             }
+
+
+
+
+
+
 
             .lower {
 
